@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Menu Web</title>
+    <link rel="stylesheet" href="../styles/about-styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <a href="#"><img id="logo-image" src="../medias/logo-cesar.svg" alt="Logo César Ortiz"></a>
+        </div>
+        <div id="links-container">
+            <a href="#projet-title" class="button">Mon Portfolio</a>
+            <a href="#skills-title" class="button">Mon expertise</a>
+            <a href="#aboutme-container" class="button">Mon univers</a>
+            <a href="#contact-title" class="button">Contact</a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+    <main>
+
+        <canvas id="canvas"></canvas>
+
+        <!-- presentation -->
+
+        <article class="presentation-container">
+            <div>
+                <h1 class="hello-title">Hello World !</h1>
+
+                <div class="profile-container">
+                    <p id="desc-text-container">
+                        Salutations, univers web ! Je suis <span class="bolder-text">César Ortiz</span>, un jeune
+                        passionné par CSS et l'art des
+                        animations web. Actuellement en formation à Marseille pour devenir un maître du <span
+                            class="bolder-text">Développement
+                            Web</span>. Je suis prêt à transformer vos sites web en fêtes dignes d'un cirque
+                        intergalactique, où les couleurs dansent et les animations prennent vie ! 🎨
+                        <br>Créatif, ambitieux et avide d'apprendre dans le monde digital en évolution
+                        constante. 🚀
+                    </p>
+                    <div class="desc-buttons-container">
+                        <div class="desc-button">
+                            <a href="../medias/pdf/CV_Developpeur.pdf" download="CV_Developpeur.pdf"
+                                target="_blank">Attrapez mon CV</a>
+                        </div>
+                        <div class="logos-container">
+                            <a href="https://dribbble.com/cesarsoyo" target="_blank"><img class="logo"
+                                    src="../medias/logo-dribble.svg" alt="Logo Dribble"></a>
+                            <a href="https://www.instagram.com/cesarortiz.dev/" target="_blank"><img class="logo"
+                                    src="../medias/logo-instagram.svg" alt="Logo Instagram"></a>
+                            <a href="https://github.com/cesarsoyo" target="_blank"><img class="logo"
+                                    src="../medias/logo-github.svg" alt="Logo Github"></a>
+                            <a href="https://www.linkedin.com/in/c%C3%A9sar-ortiz-ibarra-275b811a7/"
+                                target="_blank"><img id="logo-linkedin" class="logo" src="../medias/logo-linkedin.svg"
+                                    alt="Logo Linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img id="presentation-image" src="../medias/description-image.jpg" alt="Avatar d'un développeur">
+        </article>
+
+        <!-- projects -->
+
+        <article id="projects-container">
+            <h2 id="projet-title">
+                Mes projets dev
+            </h2>
+            <div id="projets-card-container">
+                <div class="project-cards">
+                    <a href="https://cesarsoyo.github.io/ComedyCodeHub-HTML-CSS/" target="_blank">
+                        <div class="poster-pages" id="poster1"></div>
+                    </a>
+                    <article class="cards-description">
+                        <a class="no-underline" href="https://cesarsoyo.github.io/ComedyCodeHub-HTML-CSS/"
+                            target="_blank">
+                            <h3>Code Fun: Apprendre Les Bases</h3>
+                        </a>
+                        <p>Explorez le monde des langages HTML, CSS, PHP et JS dans un monde de restauration unique,
+                            divertissant et
+                            pédagogique. Projet réalisé avec HTML et CSS. Responsive sur dispositifs Android.</p>
+                    </article>
+                </div>
+                <div class="project-cards">
+                    <a href="https://cesarsoyo.github.io/Click-the-Clown-JS-CSS/" target="_blank">
+                        <div class="poster-pages" id="poster2"></div>
+                    </a>
+                    <article class="cards-description">
+                        <a class="no-underline" href="https://cesarsoyo.github.io/Click-the-Clown-JS-CSS/"
+                            target="_blank">
+                            <h3>Click le Clown</h3>
+                        </a>
+                        <p>Amusez-vous au carnaval de cliques. C'est un jeu interactif avec des niveaux de
+                            difficulté
+                            variés. Attention au rythme effréné! Réalisé
+                            avec HTML, CSS et JavaScript.</p>
+                    </article>
+                </div>
+                <div class="project-cards">
+                    <a href="https://cesarsoyo.github.io/-TicTacToe-Player-vs-Computer-/" target="_blank">
+                        <div class="poster-pages" id="poster3"></div>
+                    </a>
+                    <article class="cards-description">
+                        <a class="no-underline" href="https://cesarsoyo.github.io/-TicTacToe-Player-vs-Computer-/"
+                            target="_blank">
+                            <h3>Tic Tac Toe</h3>
+                        </a>
+                        <p>Jouez au Tic Tac Toe contre votre ordinateur! Un défi amusant et addictif créé avec
+                            JavaScript. Pour la version PvP,
+                            <a href="https://cesarsoyo.github.io/TicTacToe-PvP/"
+                                style="list-style: none;color: white; font-family: 'Mitr';" target="_blank">cliquez
+                                ici!</a>
+                        </p>
+                    </article>
+                </div>
+                <div class="project-cards">
+                    <a href="https://cesarsoyo.github.io/BMI-Calculator-Folder/" target="_blank">
+                        <div class="poster-pages" id="poster4"></div>
+                    </a>
+                    <article class="cards-description">
+                        <a class="no-underline" href="https://cesarsoyo.github.io/BMI-Calculator-Folder/"
+                            target="_blank">
+                            <h3>Calculateur de Bonbons Corporels</h3>
+                        </a>
+                        <p>Découvrez votre IMC (indice de masse corporelle) avec notre outil simple et pratique.
+                            Connaître votre corps n'a jamais été aussi facile et accessible!
+                        </p>
+                    </article>
+                </div>
+                <div class="project-cards">
+                    <a href="https://cesarsoyo.github.io/AbsurdQuiz_JS/" target="_blank">
+                        <div class="poster-pages" id="poster5"></div>
+                    </a>
+                    <article class="cards-description">
+                        <a class="no-underline" href="https://cesarsoyo.github.io/AbsurdQuiz_JS/" target="_blank">
+                            <h3>Le Quizz Absurde</h3>
+                        </a>
+                        <p>Explorez l'absurdité avec mon quizz absurde! Des questions simplistes pour un amusement
+                            garanti. Réalisé avec CSS et JS pour une expérience unique!</p>
+                    </article>
+                </div>
+            </div>
+        </article>
+
+        <!-- skills -->
+
+        <article id="skills-container">
+            <h2 id="skills-title">
+                Mon Arsenal Web
+            </h2>
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="../medias/html-logo.png" alt="Logo HTML">
+                    <img src="../medias/css-logo.png" alt="Logo CSS">
+                    <img src="../medias/js-logo.png" alt="Logo Javascript">
+                    <img src="../medias/php-logo.png" alt="Logo PHP">
+                    <img src="../medias/nodejs-logo.png" alt="Logo NodeJs">
+                    <img src="../medias/mysql-logo.png" alt="Logo MySQL">
+                    <img src="../medias/git-logo.png" alt="Logo Git">
+                    <img src="../medias/wordpress-logo.png" alt="Logo Wordpress">
+                    <img src="../medias/figma-logo.png" alt="Logo Figma">
+                    <img src="../medias/illustrator-logo.png" alt="Logo Illsutrator">
+                    <img src="../medias/photoshop-logo.png" alt="Logo Photoshop">
+                    <img src="../medias/indesign-logo.png" alt="Logo Indesign">
+                    <img src="../medias/canva-logo.png" alt="Logo Canva">
+                    <img src="../medias/sketchup-logo.png" alt="Logo Sketchup">
+                </div>
+            </div>
+        </article>
+
+        <article id="skills-bar-container">
+            <h2 class="title-glow" id="savoirf-title">
+                Mes Savoir-Faire Web
+            </h2>
+
+            <div class="wrapper-bar">
+                <div class="bar-container">
+                    <h3>Mes compétences pratiques</h3>
+                    <div class="skills">
+                        <div class="details-bar">
+                            <span>Riguer</span>
+                        </div>
+                        <div class="bar">
+                            <div id="first-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details-bar">
+                            <span>Autonomie</span>
+                        </div>
+                        <div class="bar">
+                            <div id="second-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details-bar">
+                            <span>Gestion de projets</span>
+                        </div>
+                        <div class="bar">
+                            <div id="third-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details-bar">
+                            <span>Travail en équipe</span>
+                        </div>
+                        <div class="bar">
+                            <div id="fourth-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details-bar">
+                            <span>Conception UX/UI</span>
+                        </div>
+                        <div class="bar">
+                            <div id="fifth-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details-bar">
+                            <span>SEO</span>
+                        </div>
+                        <div class="bar">
+                            <div id="sixth-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details-bar">
+                            <span>Design Graphique</span>
+                        </div>
+                        <div class="bar">
+                            <div id="seventh-bar"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="details-bar">
+                            <span>Ponctualité</span>
+                        </div>
+                        <div class="bar">
+                            <div id="eighth-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <div id="aboutme-container">
+            <div id="aboutme-card">
+                <img id="aboutme-avatar" src="../medias/avatar-aboutme.jpeg" alt="Mon avatar de développeur web">
+                <article>
+                    <div class="aboutme-title-container">
+                        <h3>
+                            Un petit aperçu de qui je suis !
+                        </h3>
+                        <img id="icon-title" src="../medias/person-icon.svg" alt="Icone d'une personne">
+
+                    </div>
+                    <p>Alors, imaginez ça : je suis là, en train de me former en <span class="bolder-text">Développement
+                            Web</span> à l'école Ri7 à
+                        Aubagne. 🚀 Je cherche ma prochaine aventure professionnelle en tant que <span
+                            class="bolder-text">Concepteur et
+                            Développeur Web</span>. Mais attendez, ce n'est pas tout !
+
+                        <br>Avant ça, j'ai passé une année à me plonger dans <span class="bolder-text">l'Infographie à
+                            la MJM Graphic Design</span>. 🎨 Je
+                        voulais être sûr de maîtriser tous les concepts visuels pour être prêt pour le design web et
+                        même le design 3D. C'était comme un entraînement intensif pour mes créations web à venir !
+
+                        <br>Et tenez-vous bien, j'ai aussi une licence LEA. 📖 J'ai plongé dans le monde du <span
+                            class="bolder-text">marketing digital
+                            et du SEO</span>.
+                        <br>Alors, accrochez-vous, parce que je suis prêt à mettre à profit toutes mes
+                        compétences pour créer des sites web incroyables ! 💪
+                    </p>
+                    <div class="aboutme-icons-container">
+                        <a href="mailto:cesarortiz.webmaster@gmail.com" target="_blank"><img id="mail-icon"
+                                src="../medias/mail-icon.svg" alt="Icone de mail"></a>
+                        <a href="https://wa.me/+33785564559" target="_blank"><img id="whatsapp-icon"
+                                src="../medias/whatsapp-icon.svg" alt="Logo Whatsapp"></a>
+                        <a href="https://github.com/cesarsoyo" target="_blank"><img id="github-icon"
+                                src="../medias/logo-github.svg" alt="Logo Github"></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+        <!-- <?php
+        $name = $_POST['name'];
+        $company = $_POST['company'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
+        $project = $_POST['project'];
+
+        $to = 'cesarortiz.webmaster@gmail.com';
+        $subject = 'Nouveau message du portfolio';
+        $headers = 'From: ' . $email;
+        $message = "Name: $name\nCompany: $company\nEmail: $email\nPhone: $phone\nMessage:\n$message \nProject: \n$project";
+
+        if (mail($to, $subject, $message, $headers)) {
+            echo 'Email sent successfully';
+        } else {
+            echo 'Error sending email';
+        }
+        ?> -->
+
+        <div class="form-container">
+            <article class="contact-title-container">
+                <h2 id="contact-title">Prêts pour une Aventure Web?</h2>
+                <p class="contact-text">Pour me joindre, voici comment me contacter ! Ensemble, nous allons créer des
+                    merveilles web !</p>
+                <div class="mycontact-container">
+                    <div>
+                        <div class="mycontact-card">
+                            <img src="../medias/cellphone-icon.svg" alt="Icone de portable">
+                            <p>
+                                Tél : (+33) 7 85 56 45 59
+                            </p>
+                        </div>
+                        <div class="mycontact-card">
+                            <img src="../medias/email-icon.svg" alt="Icone d'email">
+                            <p>
+                                Email : cesarortiz.webmaster@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mycontact-logos">
+                        <a href="https://www.linkedin.com/in/c%C3%A9sar-ortiz-ibarra-275b811a7/"><img
+                                src="../medias/logo-linkedin.svg" alt="Logo Linkedin"></a>
+                        <a href="https://wa.me/+33785564559"><img src="../medias/whatsapp-icon.svg"
+                                alt="Logo Whatsapp"></a>
+                    </div>
+                </div>
+
+                <p class="contact-text">Et si vous préférez la modernité, remplissez ce formulaire et je vous
+                    contacterai.
+                    <br>Hâte de collaborer
+                    avec
+                    vous sur votre projet web !
+                </p>
+            </article>
+            <div class="inputs-container">
+                <form id="formulaire-contact" action="send_email.php" method="post">
+                    <div class="column-form">
+                        <div>
+                            <div class="label-cards">
+                                <label for="name">Nom sympa :</label>
+                            </div>
+                            <input placeholder="Votre Nom (ou Surnom cool !)" type="text" name="name" id="name"
+                                required>
+                        </div>
+                        <div>
+                            <div class="label-cards">
+                                <label for="company">Nom de votre Crew :</label>
+                            </div>
+
+                            <input placeholder="Nom de votre Squad" type="text" name="company" id="company">
+                        </div>
+                    </div>
+                    <div class="column-form">
+                        <div>
+                            <div class="label-cards">
+                                <label for="email">Email :</label>
+                            </div>
+
+                            <input placeholder="Votre Email Ultra cool" type="email" name="email" id="email" required>
+                        </div>
+                        <div>
+                            <div class="label-cards">
+                                <label for="phone">Téléphone :</label>
+                            </div>
+
+                            <input placeholder="Votre numéro de téléphone" type="tel" name="phone" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="label-cards">
+                        <label for="message">Message :</label>
+                    </div>
+
+                    <textarea placeholder="Exprimez-vous sur tout ce que vous souhaitez me communiquer..."
+                        name="message" id="message"></textarea>
+
+                    <div class="label-cards">
+                        <label for="project">Description de votre Projet Créatif :</label>
+                    </div>
+
+                    <textarea placeholder="Éclairez-moi sur votre projet en quelques mots de génie!" name="project"
+                        id="project"></textarea>
+                    <div class="btn-form-container">
+                        <button type="submit">Envoyer le Fun !</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="../functions/about-functions.js"></script>
+</body>
+
+<footer>
+    <p>César Ortiz - Portfolio Web | © 2024 Tous droits réservés</p>
+</footer>
+
+</html>
