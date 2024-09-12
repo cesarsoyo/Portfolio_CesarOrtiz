@@ -2622,7 +2622,7 @@ footer p {
     padding: 7px 10px;
     border-radius: 30px;
     width: 75vw;
-    height: auto;
+    height: 200px;
     margin: auto;
     border: 5px solid rgba(255, 255, 255, 0.5);
     margin-top: 200px;
@@ -3320,7 +3320,7 @@ footer p {
     width: 42px;
   }
 
-  .inputs-container {
+  /* .inputs-container {
     width: 80%;
   }
 
@@ -3409,7 +3409,7 @@ footer p {
   .form-container:hover .btn-form-container:hover {
     background-color: rgb(253, 248, 99);
     filter: drop-shadow(0 0 15px rgb(253, 248, 99)) contrast(2) brightness(1.2);
-  }
+  } */
 
 
   footer {
